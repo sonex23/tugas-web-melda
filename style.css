@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(3, 3, 58);
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 30px 10%;
+    background-color:rgb(82, 131, 207);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+.title img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.title h2{
+    color: rgb(234, 241, 247);
+}
+.hero-section{
+    margin-top: 100px;
+    padding:0 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.hero-content{
+    width: 50%;
+}
+
+.hero-image{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.hero-text{
+    font-size: 1.3em;
+}
+
+.about-us-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10%;
+    margin-bottom: 50px;
+}
+
+.about-us-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us-section h1{
+    margin: 0;
+}
+
+.about-us-section p{
+    font-size: 1.2em;
+    padding : 0 5% ;
+}
+
+.visi-misi-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.visi-misi{
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.visi, .misi{
+    padding: 20px 0;
+    box-shadow: 0px 10px 100px 0 rgba(0, 0, 0, 0.05) ;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+}
+
+.visi h2{
+    margin: 0;
+}
+
+.visi p{
+    text-align: justify;
+    padding: 0 5%;
+    font-size: 1.2em;
+}
+
+
+.misi h2{
+    margin: 0;
+}
+
+.misi ol li{
+    font-size: 1.2em;
+    text-align: justify;
+    padding: 0 5%;
+}
+
+.btn-cta{
+    width: 200px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(82, 131, 207);
+    border: 0;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.news-section{
+    width: 100%;
+    padding: 0px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news-section h1{
+    text-align: center;
+}
+
+.row-news{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.card-news{
+    width: 30%;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-news img{
+    margin: 0;
+}
+
+.news-content{
+    color: white;
+    position: absolute;
+    padding: 10px 10px;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.05), rgb(0, 0, 0));
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news-content h2{
+    color: white;
+}
+
+.card-news a{
+    text-decoration: none;
+}
+
+.gallery-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gallery-section h1{
+    text-align: center;
+}
+
+.row-gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    padding: 0 10%;
+}
+
+.card-gallery{
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-gallery a img{
+    height: 100%;
+}
+
+footer{
+    background-color: rgb(3, 2, 59);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width:640px) {
+
+    .hero-image{
+        display: none;
+    }
+    .hero-section{
+        padding: 0 5%;
+    }
+    .hero-content{
+        width: 100%;
+    }
+
+    .about-us-section{
+        padding: 30px 5%;
+    }
+    
+    .about-us-content img{
+        display: none;
+    }
+
+    .about-us-content p{
+        text-align: justify;
+    }
+
+    .visi-misi{
+        flex-direction: column;
+    }
+    .visi{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .misi{
+        width: 100%;
+    }
+
+    .row-news{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .card-news{
+        width: 100%;
+        height: 230px;
+        margin-bottom: 20px;
+    }
+
+    .row-gallery{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .card-gallery{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
